@@ -1,3 +1,9 @@
 # Inteligencia Computacional
-de
-## Percepdtron
+
+##  Ajuste por mínimos cuadrados
+
+## Descenso del Gradiente
+
+## Perceptron
+
+## Perceptrón Multicapa
