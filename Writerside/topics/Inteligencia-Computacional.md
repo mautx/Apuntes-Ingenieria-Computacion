@@ -1,3 +1,3 @@
 # Inteligencia Computacional
 de
-## Perceptron
+## Percepdtron
