@@ -43,7 +43,8 @@ spring.jpa.show-sql=true
 
 Prueba compilar y ejecutar y deberias de ver algo como 
 
-![Esto](spring-compiled.png)
+![Esto](spring-compiled.png){height=32}
+
 2. Step with a [link](https://www.jetbrains.com)
 
 3. Final step in part 1.
