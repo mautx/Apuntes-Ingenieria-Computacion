@@ -1,4 +1,4 @@
-# Un servidor con Java Spring
+# Un servidor Restful con Java Spring
 
 Hacer servidores RESTful con Java y spring es muy sencillo. Spring, con su versión springboot
 permite hacer por ti los mapeos, funciona como ORM y monta un servidor para vincular los handlers
@@ -43,7 +43,7 @@ spring.jpa.show-sql=true
 
 Prueba compilar y ejecutar y deberias de ver algo como 
 
-![Esto](spring-compiled.png){height=32}
+![Esto](spring-compiled.png){height=32 thumbnail=true}
 
 2. Step with a [link](https://www.jetbrains.com)
 
