@@ -5,9 +5,10 @@ You can use it as a sandbox to play with Writerside features, and remove it from
 If you want to re-add it for your experiments, click + to create a new topic, choose Topic from Template, and select the 
 "Starter" template.-->
 
-Yo, Mausito BB, he creado la herramienta perfecta para el pueblo mexicano. Se trata de mi diario que engloba *superficialmente* todo
-lo que he aprendido a lo largo (y ancho) de mi carrera de ingeniería en computación. Me considero alguien bastante lento de aprendizaje,
-por no decir otra cosa, sin embargo, ahora tengo bajo mi mano bastante conocimiento que quiero compartir y con un mensaje: Si yo pude, es muy
+Yo, maumaumau!, he creado la herramienta perfecta para el pueblo mexicano. Se trata de mi diario que engloba *superficialmente* todo
+lo que he aprendido a lo largo (y ancho) de mi carrera de ingeniería en computación.
+
+Me considero alguien bastante lento de aprendizaje por no decir otra cosa, sin embargo, ahora tengo bajo mi mano bastante conocimiento que quiero compartir y con un mensaje: Si yo pude, es muy
 probable que tú también. 
 
 ![Create new topic options](new_topic_options.png){ border-effect="line" thumbnail="true" width="321"}
