@@ -19,6 +19,7 @@ Pues como tú quieras, los temas no están numerados ni siguen algún orden, sin
 el tema de desarrollo de software, te recomiendo ir siguiendo los temas en el órden de algún [Roadmap](https://roadmap.sh/roadmaps) 
 o algún [plan de estudios](http://cbi.azc.uam.mx/?page_id=3697) de una universidad.
 
+
 ## Contacto
 
 **Email:** mauriciotxai@gmail.com
