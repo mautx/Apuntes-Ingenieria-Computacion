@@ -7,5 +7,7 @@
                  start-page="Default-topic.md">
 
     <toc-element topic="Inteligencia-Computacional.md"/>
+    <toc-element topic="Un-servidor-con-Java-Spring.md"/>
     <toc-element topic="Default-topic.md"/>
+    <toc-element topic="Combinatoria.md"/>
 </instance-profile>

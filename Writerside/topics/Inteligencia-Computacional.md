@@ -4,6 +4,6 @@
 
 ## Descenso del Gradiente
 
-## Perceptron
+## Perceptrón
 
 ## Perceptrón Multicapa
