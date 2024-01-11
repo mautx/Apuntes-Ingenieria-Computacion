@@ -13,6 +13,7 @@ probable que tú también.
 
 ![Create new topic options](new_topic_options.png){ border-effect="line" thumbnail="true" width="321"}
 
+
 ## ¿Cómo leer este diario?
 Pues como tú quieras, los temas no están numerados ni siguen algún orden, sin embargo, si eres nuevo en 
 el tema de desarrollo de software, te recomiendo ir siguiendo los temas en el órden de algún [Roadmap](https://roadmap.sh/roadmaps) 
