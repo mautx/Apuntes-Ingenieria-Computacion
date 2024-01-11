@@ -34,7 +34,7 @@ donde tienes que reemplazar tu base de datos, el nombre de la base de datos, tu 
     spring.datasource.url=jdbc:mariadb://localhost:3306/your_database_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.driver-class-name=org.mariadb.jdbc.Drivers
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
