@@ -7,7 +7,7 @@ If you want to re-add it for your experiments, click + to create a new topic, ch
 
 # ¡Hola, soy maumaumau! 🚀
 
-Bienvenido a mi diario de aprendizaje en el fascinante mundo de la ingeniería en computación. A lo largo de mi carrera, he recopilado conocimientos que ahora pongo a tu disposición. Milagrosamente he llegado a comprender muchos aspectos que deseo compartir contigo, ¡porque si yo pude, es muy probable que tú también!
+Bienvenido a mi diario de aprendizaje en el  mundo de la ingeniería en computación. A lo largo de mi carrera, he recopilado conocimientos que ahora pongo a tu disposición. Milagrosamente he llegado a comprender muchos aspectos que deseo compartir contigo, ¡porque si yo pude, es muy probable que tú también!
 
 
 ## ¿Cómo explorar este diario?
