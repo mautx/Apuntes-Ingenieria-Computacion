@@ -54,6 +54,8 @@ Ahora, procederemos a crear una entidad. ¿Cuál es su propósito? Una entidad, 
 
 La creación de una entidad es esencial para que Spring, a través de JPA, tenga la capacidad de mapear objetos Java a registros en la base de datos. En otras palabras, la entidad actúa como una representación de la estructura de datos en tu aplicación, permitiendo que los objetos de esa clase se almacenen y recuperen de la base de datos de manera eficiente.
 
+Antes de crear la entidad, creamos un package nuevo llaado entity. Ahí irán todos los modelos de la base de datos.
+
 Lo primero es indicarle a Spring que vamos a hacer una entidad:
 
 ``` Java
@@ -136,9 +138,12 @@ public class Employee {
 }
 ```
 Recuerda que Java es muy verboso, pero realmente el código es muy sencillo.
-## What you've learned {id="what-learned"}
+## Parte 3, creación de la interfáz repository. 
 
-Summarize what the reader achieved by completing this tutorial.
+Ahora, abordaremos una tarea relativamente sencilla: la creación de una interfaz que nos permita implementar JpaRepository. Dado que estamos trabajando con templates, es esencial indicar explícitamente que la interfaz operará con el tipo <Employee, Long>, donde Long será el tipo de dato del identificador (id).
+
+```
+
 
 <seealso>
 <!--Give some related links to how-to articles-->
