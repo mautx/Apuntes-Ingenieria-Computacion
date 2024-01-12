@@ -140,11 +140,84 @@ public class Employee {
 Recuerda que Java es muy verboso, pero realmente el código es muy sencillo.
 ## Parte 3, creación de la interfáz repository. 
 
-Ahora, abordaremos una tarea relativamente sencilla: la creación de una interfaz que nos permita implementar JpaRepository. Dado que estamos trabajando con templates, es esencial indicar explícitamente que la interfaz operará con el tipo <Employee, Long>, donde Long será el tipo de dato del identificador (id).
+Ahora, abordaremos una tarea muy sencilla: la creación de una interfaz que nos permita implementar JpaRepository. Dado que estamos trabajando con templates, es esencial indicar explícitamente que la interfaz operará con el tipo <Employee, Long>, donde Long será el tipo de dato del identificador (id).
 
 ```
+public interface EmployeeRepository  extends JpaRepository<Employee, Long> {
+}
+```
+Este repositorio constituye mi sección preferida de Spring. Se trata de una herramienta sumamente potente que, al ser invocada, nos capacita para gestionar los aspectos más fundamentales del CRUD.
 
+¡Y listo! Hemos completado la sección de indexación de objetos en la base de datos. Ahora, adentrémonos en las solicitudes HTTP.
 
-<seealso>
-<!--Give some related links to how-to articles-->
-</seealso>
+## Parte 4, Creación de los controller
+Ahora llegó el momento de la verdad. Hacer un handler para gestionar las peticiones http.
+
+Primero creamos una clase con un atributo EmployeeRepository que creamos anteriormente.
+
+``` Java
+  private final EmployeeRepository repository;
+
+  EmployeeController(EmployeeRepository repository) {
+    this.repository = repository;
+  }
+```
+
+Y empezamos a añadir los handlers. En este ejemplo, ocuparemos tres, ya que hacer más controllers se sale del scope de este tutorial.
+
+``` Java
+  @PostMapping("/employees")
+  Employee newEmployee(@RequestBody Employee newEmployee) {
+    return repository.save(newEmployee);
+  }
+
+  @GetMapping("/employees/{id}")
+  Employee one(@PathVariable Long id) {
+    
+    return repository.findById(id)
+      .orElseThrow(() -> new EmployeeNotFoundException(id));
+  }
+
+  @GetMapping("/employees")
+  List<Employee> all() {
+    return repository.findAll();
+  }
+```
+ Hay algunas cosas interesantes. El decorator de arriba de la función handler indica a spring cómo tratar la solicitud, en este caso usamos:
+* GetMapping
+* PostMapping
+* getMapping(con path param)
+
+Y con cada controller usamos alguno de los métodos que spring ya nos ofrece para buscar en la base de datos.
+* repository.findAll()
+* repository.findById(id)
+* repository.save(newEmployee)
+
+Y listo. Básicamente ya tenemos un muy simple servidor RESTFul, puedes hacer las prruebas de post con curl
+
+``` Bash
+curl -X POST -H "Content-Type: application/json" -d '{"name":"Mauserion","role":"Developer"}' http://localhost:8080/employees
+```
+
+Y para provar el get, puedes ingresar desde tu navegador ingresando a localhost:8080/employees
+``` JSON
+[{"id":1,"name":"Bilbo Baggins","role":"burglar"},{"id":2,"name":"Frodo Baggins","role":"thief"},{"id":52,"name":"John Doe","role":"Developer"},{"id":53,"name":"Mausito","role":"Tech lead"},{"id":102,"name":"Mauserion","role":"Developer"}]
+```
+
+Para finalizar, obviamente puedes cambiar lo que sea para tu implementación, pero siempre recordando que Spring usa la siguiente
+estructura de implementación:
+``` mermaid
+graph TD
+    subgraph springboot
+
+        A[Entity] -->|Define la estructura de la tabla en la base de datos| B[Repository]
+        B -->|Gestiona la interacción con la base de datos| C[Controller]
+    end
+
+```
+Visita los siguientes enlaces para obtener más información:
+
+- [Spring REST Guide](https://spring.io/guides/tutorials/rest/)
+- [React and Spring Data REST Guide](https://spring.io/guides/tutorials/react-and-spring-data-rest/)
+- [Spring Initializr](https://start.spring.io/)
+
