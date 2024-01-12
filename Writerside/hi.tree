@@ -19,5 +19,11 @@
         <toc-element topic="Inteligencia-Computacional.md"/>
     </toc-element>
 
+    <toc-element toc-title="Algoritmos y estructuras de datos">
+        <toc-element topic="Introducción-a-los-algoritmos.md"/>
+    </toc-element>
+
+
+
 
 </instance-profile>
