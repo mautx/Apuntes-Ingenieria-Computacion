@@ -15,8 +15,6 @@ Requisitos:
 
 ## Parte 1 - Generar y Configurar el proyecto.
 
-Describe what the user will learn and accomplish in the first part,
-then write a step-by-step procedure but on a real-world example.
 
 1. Ingresa a [Spring initializr](https://start.spring.io/) y genera un proyecto con:
 * El grupo (group) en Maven se utiliza para organizar y categorizar los proyectos.  Si el nombre de dominio de tu organización es "example.com", el grupo podría ser algo como "com.example". 
