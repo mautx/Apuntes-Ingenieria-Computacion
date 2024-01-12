@@ -45,18 +45,97 @@ Prueba compilar y ejecutar y deberias de ver algo como
 
 ![Esto](spring-compiled.png){height=32 thumbnail=true}
 
-2. Step with a [link](https://www.jetbrains.com)
+Ya estamos listos para darle estructura al proyecto
 
-3. Final step in part 1.
 
-## Part 2
+## Parte 2, creación de una entidad
 
-This is the second part of the tutorial:
+Ahora, procederemos a crear una entidad. ¿Cuál es su propósito? Una entidad, también conocida como "entity" en inglés, desempeña un papel fundamental en el framework Spring, especialmente cuando se utiliza la tecnología JPA (Java Persistence API). En este contexto, una entidad representa una clase que será persistida en una base de datos.
 
-1. Step 1
-2. Step 2
-3. Step n
+La creación de una entidad es esencial para que Spring, a través de JPA, tenga la capacidad de mapear objetos Java a registros en la base de datos. En otras palabras, la entidad actúa como una representación de la estructura de datos en tu aplicación, permitiendo que los objetos de esa clase se almacenen y recuperen de la base de datos de manera eficiente.
 
+Lo primero es indicarle a Spring que vamos a hacer una entidad:
+
+``` Java
+ @Entity
+public class Employee {
+}
+``` 
+
+Forzosamente esta entidad te pide que generes un ID como atributo de la entidad.
+
+``` Java
+    @Id@GeneratedValue
+    private Long id;
+``` 
+
+Ingresamos los atributos que queramos en el empleado, en este caso name y role:
+
+``` Java
+    @Id@GeneratedValue
+    private Long id;    
+    private String name;
+    private String role;
+
+``` 
+
+y al generar el constructor por default, el constructor que llena los atributos y los getters y setters quedaría:
+
+``` Java
+@Entity
+public class Employee {
+
+    @Id@GeneratedValue
+    private Long id;
+
+
+    private String name;
+
+
+    private String role;
+
+    public Employee(){}
+    Employee(String name, String role){
+        this.name = name;
+        this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", role='" + role + '\'' +
+                '}';
+    }
+}
+```
+Recuerda que Java es muy verboso, pero realmente el código es muy sencillo.
 ## What you've learned {id="what-learned"}
 
 Summarize what the reader achieved by completing this tutorial.
