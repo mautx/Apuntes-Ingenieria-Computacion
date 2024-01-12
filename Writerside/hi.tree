@@ -7,6 +7,10 @@
                  start-page="Default-topic.md">
 
     <toc-element topic="Default-topic.md"/>
+    <toc-element toc-title="Algoritmos y estructuras de datos">
+        <toc-element topic="Introducción-a-los-algoritmos.md"/>
+        <toc-element topic="Análisis-y-diseño-de-algoritmos.md"/>
+    </toc-element>
 
     <toc-element toc-title="Matemáticas orientadas a la ingeniería en computación">
         <toc-element topic="Combinatoria.md"/>
@@ -18,12 +22,6 @@
     <toc-element toc-title="Inteligencia Artificial y Big Data">
         <toc-element topic="Inteligencia-Computacional.md"/>
     </toc-element>
-
-    <toc-element toc-title="Algoritmos y estructuras de datos">
-        <toc-element topic="Introducción-a-los-algoritmos.md"/>
-    </toc-element>
-
-
 
 
 </instance-profile>
