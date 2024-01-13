@@ -10,4 +10,8 @@
         <description>Created after removal of "Un servidor Java con Spring" from Help Instance</description>
         <accepts>Un-servidor-Java-con-Spring.html</accepts>
     </rule>
+    <rule id="64b713d4">
+        <description>Created after removal of "Exponentes inversos" from Temas</description>
+        <accepts>Exponentes-inversos.html</accepts>
+    </rule>
 </rules>

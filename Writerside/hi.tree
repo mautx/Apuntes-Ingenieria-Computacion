@@ -23,5 +23,11 @@
         <toc-element topic="Inteligencia-Computacional.md"/>
     </toc-element>
 
+    <toc-element toc-title="Matemáticas básicas">
+        <toc-element topic="Sumatorias.md"/>
+        <toc-element topic="Exponentes-negativos.md"/>
+    </toc-element>
+
+
 
 </instance-profile>
