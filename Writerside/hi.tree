@@ -8,6 +8,7 @@
 
     <toc-element topic="Default-topic.md"/>
     <toc-element toc-title="Algoritmos y estructuras de datos">
+        <toc-element topic="Recursividad.md"/>
         <toc-element topic="Introducción-a-los-algoritmos.md"/>
         <toc-element topic="Análisis-y-diseño-de-algoritmos.md"/>
     </toc-element>
