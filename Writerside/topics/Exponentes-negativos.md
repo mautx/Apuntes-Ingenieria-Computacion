@@ -1,4 +1,5 @@
 # Exponentes negativos
+Cheatsheet de exponentes negativos.
 
 Reglas:
 
@@ -20,3 +21,18 @@ a^n / a^{-m} = a^{n+m}
 
 ```
   Cuando divides dos términos con la misma base y exponentes de signos opuestos, puedes sumar los exponentes.
+
+```mermaid
+graph TD
+    1((Neurona 1))
+    2((Neurona 2))
+    3((Neurona 3))
+    4((Neurona 4))
+    B((Bias))
+
+    B -->|Peso| 2
+    B -->|Peso| 1
+    2 -->|Peso| 1
+    2 -->|Peso| 3
+    2 -->|Peso| 4
+```

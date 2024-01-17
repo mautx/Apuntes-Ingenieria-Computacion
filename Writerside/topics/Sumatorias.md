@@ -1,4 +1,5 @@
 # Sumatorias
+Cheatsheet de sumatoria
 1. Suma de una constante:
 ```tex
    \sum_{i=1}^{n} c = c \cdot n 
